@@ -207,3 +207,8 @@ while True:
     clientSocket.close()
   except:
     print ('Failed to close client socket')
+
+
+# Step 7: Handle cache miss - fetch from origin server
+# If file not in cache, connect to origin server, request resource,
+# save response to cache, and send it back to client.
